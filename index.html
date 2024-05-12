@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth focus:scroll-auto">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduworld</title>
+    <!-- CDN links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="bg-[#CCCCFF] z-99 fixed py-3 w-full shadow-md mx-auto">
+        <nav class="flex items-center justify-between mx-5">
+            <div class="logo text-xl font-semibold ">
+                <h1 class="text-gray-800">Uni <span class="text-[#800080]">Code</span></h1>
+            </div>
+            <div class="relative hidden md:block mx-auto md:mx-0 items-center justify-center " id="navmenu" >
+                <ul
+                    class="md:flex  bg-transparent flex-col md:flex-row md:space-x-3 text-center " >
+                    <li><a class="hover:bg-white px-4 py-2  duration-200 rounded-md" href="#home">HOME</a></li>
+                    <li><a class="hover:bg-white px-4 py-2 rounded-md duration-200 " href="#skill">SKILL</a></li>
+                    <li><a class="hover:bg-white px-4 py-2 rounded-md duration-200 " href="#service">SERVICE</a></li>
+                    <li><a class="hover:bg-white px-4 py-2 rounded-md duration-200 " href="#about">ABOUT</a></li>
+                    <li><a class="hover:bg-white px-4 py-2 rounded-md duration-200 " href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="md:hidden space-x-2 flex absolute top-2 right-4">
+                <div>
+                    <i class="fa-solid fa-bars text-2xl cursor-pointer" id="hamburger"></i>
+                </div>
+                <div>
+                    <i class="fa-regular fa-rectangle-xmark text-2xl hidden cursor-pointer " id="closeicon"></i>
+                </div>
+                
+            </div>
+            <div class="btn hidden md:block">
+                <button
+                    class="btn bg-[#800080] text-white hover:text-[#800080] hover:bg-white font-medium text-lg px-4 py-1 rounded-md duration-200">Explore</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="content_of_image " id="home">
+            <div class="left">
+                <img class=" coverpic w-full h-[80vh] object-cover rounded-sm  shadow-md  bg-no-repeat bg-cover "
+                    src="./img/" alt="">
+            </div>
+            <div
+                class="right  absolute top-1/2 md:top-96 left-1/2 text-white transform -translate-x-1/2 -translate-y-1/2 text-center space-y-2 ">
+                <h1 class="font-semibold text-xl md:text-2xl lg:text-3xl xl:text-3xl ">A Complete Guide On A Modern
+                    Websites</h1>
+                <p class="text-xl">Lorem ipsum dolor sit amet.</p>
+                <button
+                    class="btn bg-white text-[#800080] hover:text-white hover:bg-[#800080] font-medium text-lg px-4 py-1 rounded-md duration-200">Services</button>
+            </div>
+        </div>
+    </div>
+    <div class="card text-center my-12 py-10 " id="skill">
+        <div class="text-center mb-6 text-2xl md:text-3xl lg:text-4xl">Most Popular Skill</div>
+        <div
+            class="grid grid-cols-1 grid-rows-5 sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-6 md:grid-rows-2 lg:grid-cols-6 lg:grid-rows-2 items-center justify-center text-white text-wrap mx-auto container gap-2 ">
+            <section
+                class="bg-[#800080] py-6 mx-2 rounded-md hover:text-white hover:bg-gray-800 duration-300 mb-10 md:col-start-1 md:col-end-3 shadow-md ">
+                <i class="fa-regular fa-clock text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-semibold">Call Services</h1>
+                <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti!
+                </p>
+            </section>
+            <section
+                class="  bg-[#800080] py-6 mx-2 rounded-md hover:text-white hover:bg-gray-800 duration-300 mb-10 md:col-start-3 md:col-end-5 ">
+                <i class="fa-regular fa-circle-check text-2xl "></i>
+                <h1 class="text-xl md:text-2xl font-semibold">Active Warning</h1>
+                <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti!
+                </p>
+            </section>
+            <section
+                class="bg-[#800080] py-6 mx-2 rounded-md hover:text-white hover:bg-gray-800 duration-300 mb-10 md:col-start-5 md:col-end-7">
+                <i class="fa-regular fa-rectangle-list text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-semibold">Care Plan</h1>
+                <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti!
+                </p>
+            </section>
+
+            <section
+                class="bg-[#800080] py-6 mx-2 rounded-md hover:text-white hover:bg-gray-800 duration-300 mb-10 md:col-start-2 md:col-end-4">
+                <i class="fa-regular fa-gem text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-semibold">Creative Design</h1>
+                <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti!
+                </p>
+            </section>
+
+            <section
+                class="bg-[#800080] py-6 mx-2 rounded-md hover:text-white hover:bg-gray-800 duration-300 mb-10 md:col-start-4 md:col-end-6 ">
+                <i class="fa-regular fa-star text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-semibold">Professional Design</h1>
+                <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, deleniti!
+                </p>
+            </section>
+
+
+        </div>
+
+    </div>
+
+    <div class="custom_package text-center items-center justify-center space-y-5 bg-gray-100 py-20">
+        <h1 class="text-center mb-6 text-2xl md:text-3xl lg:text-4xl ">Custom Packages</h1>
+        <p class="text-md md:text-lg lg:text-xl ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam
+            ipsum nemo dignissimos ipsam et expedita odio non veniam pariatur perspiciatis.</p>
+        <button
+            class="btn bg-[#800080] text-white hover:text-[#800080] hover:bg-white font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg min-w-44 mr-2">View
+            Example Quokte</button>
+        <button
+            class="btn bg-[#800080] text-white hover:text-[#800080] hover:bg-white font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg min-w-44 ml-2">View
+            Example Packages</button>
+    </div>
+
+    <div class="about" id="about">
+        <div class="card">
+
+            <div class="card text-center md:my-12 md:py-10 ">
+                <div class="text-center mb-10 text-2xl md:text-3xl lg:text-4xl">Know About Us</div>
+                <div
+                    class="grid grid-cols-1 grid-rows-2 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 items-center justify-center text-white text-wrap mx-auto container gap-2 ">
+                    <section
+                        class="bg-[#CCCCFF] py-6 mx-2 rounded-md text-gray-800 hover:bg-white duration-300 mb-10 shadow-lg ">
+                        <i class="fa-solid fa-certificate text-3xl"></i>
+                        <h1 class="text-xl md:text-2xl font-semibold">License & Certificate</h1>
+                        <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                            deleniti!</p>
+                        <button
+                            class="btn bg-[#852685] text-white hover:text-[#800080] hover:bg-[#CCCCFF] font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg ">Read
+                            More</button>
+                    </section>
+
+
+                    <section
+                        class="bg-[#CCCCFF] py-6 mx-2 rounded-md text-gray-800 hover:bg-white duration-300 mb-10 shadow-lg cursor-pointer">
+                        <i class="fa-solid fa-user-tie text-3xl"></i>
+                        <h1 class="text-xl md:text-2xl font-semibold">Professional Team</h1>
+                        <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                            deleniti!</p>
+                        <button
+                            class="btn bg-[#852685] text-white hover:text-[#800080] hover:bg-[#CCCCFF] font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg ">Read
+                            More</button>
+                    </section>
+                    <section
+                        class="bg-[#CCCCFF] py-6 mx-2 rounded-md text-gray-800 hover:bg-white duration-300 mb-10 shadow-lg ">
+                        <i class="fa-solid fa-person-chalkboard text-3xl"></i>
+                        <h1 class="text-xl md:text-2xl font-semibold">Great Presentration</h1>
+                        <p class="text-lg py-2 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+                            deleniti!</p>
+                        <button
+                            class="btn bg-[#852685] text-white hover:text-[#800080] hover:bg-[#CCCCFF] font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg ">Read
+                            More</button>
+                    </section>
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="content_of_image2 relative text-white">
+        <div class="left">
+            <img
+                class=" coverpic2 w-full  md:w-[70%] h-[60vh] object-cover rounded-md  shadow-md  bg-no-repeat bg-cover mx-auto ">
+        </div>
+        <div
+            class="right absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2text-white  text-center space-y-2 ">
+            <h1 class="font-semibold text-xl md:text-2xl lg:text-3xl xl:text-3xl mb-2">Are You Looking For A Digital
+                Solution</h1>
+            <p class="text-xl py-4">Lorem ipsum dolor sit amet.</p>
+            <button
+                class="btn bg-white text-[#800080] hover:text-white hover:bg-[#800080] font-medium text-lg px-4 py-2 rounded-md duration-200 mb-2">Contact
+                Us</button>
+        </div>
+    </div>
+
+
+    <div class="" id="service">
+        <h1 class="text-center text-3xl py-10"> Our Top Service</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 text-center items-center justify-center container mx-auto">
+            <div class="leftside">
+                <h1 class="text-3xl md:text-4xl  lg:text-5xl text-center pb-4">Web Development</h1>
+                <p class="text-xl md:text-2xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt,
+                    enim dignissimos commodi tempora quasi cupiditate culpa minus laboriosam cumque.</p>
+            </div>
+            <div class="rightside">
+                <img class="md:w-[500px] h-[500px] object-cover mx-auto" src="./img/prgrammer.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="second_side py-20 bg-gray-100 my-10">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 text-center items-center justify-center container mx-auto">
+            <div class="leftside">
+                <img class="md:w-[500px] h-[500px] w-full object-cover rounded-lg mx-auto" src="./img/section2.jpg"
+                    alt="">
+            </div>
+            <div class="rightside">
+                <h1 class="text-3xl md:text-4xl  lg:text-5xl text-center py-4">Web Optimization</h1>
+                <p class="text-xl md:text-2xl pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sunt,
+                    enim dignissimos commodi tempora quasi cupiditate culpa minus laboriosam cumque.</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <h1 class="text-3xl md:text-4xl  lg:text-5xl text-center py-4">Contact Us</h1>
+        <div class="form container mx-auto w-full md:w-[40%]">
+            <form action="" class="text-center items-center justify-center">
+
+                <input class="border-none bg-gray-200 shadow-inner rounded-lg pl-3 my-4 w-full py-3 text-md" type="text"
+                    placeholder="Enter Your Name">
+                <input class="border-none bg-gray-200 shadow-inner rounded-lg pl-3 my-4 w-full py-3 text-md"
+                    type="email" placeholder="Enter Your Email">
+                <input class="border-none bg-gray-200 shadow-inner rounded-lg pl-3 my-4 w-full py-3 text-md"
+                    type="number" placeholder="Enter Your Number">
+                <input class="border-none bg-gray-200 shadow-inner rounded-lg pl-3 my-4 w-full py-5 text-md" type="text"
+                    placeholder="Enter Your Name">
+            </form>
+            <button
+                class="btn bg-[#852685] text-white hover:text-[#800080] hover:bg-[#CCCCFF] font-medium text-lg px-4 py-1 rounded-md duration-200 shadow-lg w-full my-4">Submit</button>
+        </div>
+    </div>
+
+
+    <footer class="grid grid-cols-1 md:grid-cols-3 w-full mx-auto bg-gray-100 mt-10">
+        <div class="container mx-auto w-[90%] py-10">
+            <h1 class="text-2xl md:text-3xl text-wrap pb-2">Learn About Us</h1>
+            <ul class=" text-md space-y-2">
+                <li><a href="About Us">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="container mx-auto w-[90%] py-10">
+            <h1 class="text-2xl md:text-3xl text-wrap pb-2">Contact </h1>
+            <ul class=" text-md space-y-2">
+                <li><a href="#">Alamin69@gmail.com</a></li>
+                <li><a href="#">+8801696969696</a></li>
+                <li><a href="#">Uganana khalpar,gulsan</a></li>
+
+            </ul>
+        </div>
+        <div class="container mx-auto w-[90%] py-10">
+            <h1 class="text-2xl md:text-3xl text-wrap pb-2">Stay Updated </h1>
+            <p class="text-balance">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum possimus commodi
+                ipsum, incidunt tempora ipsa unde suscipit sunt, dolor quidem iusto rerum sed aliquam voluptas.</p>
+            <div>
+                <input class="border-none bg-gray-200 shadow-inner rounded-lg pl-3 my-4  py-3 text-md w-[80%]"
+                    type="email" placeholder="Enter Your Email">
+                <label class="ml-2 bg-[#CCCCFF] px-2 md:px-3 py-2 rounded-md cursor-pointer" for="Submit">Submit</label>
+            </div>
+        </div>
+
+    </footer>
+    <div class="bg-black text-white py-4 text-center">
+        <p>Copyright &copy; 2024 created by Alamin</p>
+    </div>
+
+
+    <!--javascript start-->
+    <script src="script.js"></script>
+    <!--javascript end-->
+
+
+</body>
+
+</html>
